@@ -1,0 +1,48 @@
+version: "2.0"
+
+stories:
+
+- story: book room 1
+  steps:
+  - intent: book_room
+  - action: utter_room_number
+
+- story: book room 2
+  steps:
+  - intent: book_room_number
+  - action: action_set_rooms
+
+- story: book room 3
+  steps:
+  - intent: simple_rooms
+  - action: utter_simple_rooms
+
+- story: book room 2
+  steps:
+  - intent: delux_rooms
+  - action: utter_delux_rooms
+
+- story: room clean 1
+  steps:
+  - intent: room_clean_query
+  - action: utter_room_clean_query
+
+- story: room clean 2
+  steps:
+  - intent: room_clean_slow
+  - action: utter_room_clean_slow
+
+- story: room clean 3
+  steps:
+  - intent: room_clean_fast
+  - action: utter_room_clean_fast
+
+#   - intent: room_clean_fast
+#   - action: utter_room_clean_fast
+#
+# - story: room clean 2
+#   steps:
+#   - intent: room_clean_query
+#   - action: utter_room_clean_query
+#   - intent: room_clean_slow
+#   - action: utter_room_clean_slow

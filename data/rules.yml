@@ -1,0 +1,65 @@
+version: "2.0"
+
+rules:
+
+- rule: Say something 1
+  steps:
+  - intent: simple_rooms
+  - action: utter_simple_rooms
+
+- rule: Say something 2
+  steps:
+  - intent: delux_rooms
+  - action: utter_delux_rooms
+
+# - rule: Room Clean 1
+#   steps:
+#   - intent: room_clean_fast
+#   - action: utter_room_clean_fast
+#
+# - rule: Room Clean 2
+#   steps:
+#   - intent: room_clean_slow
+#   - action: utter_room_clean_slow
+
+
+- rule: FAQ 1
+  steps:
+  - intent: check_in_timings
+  - action: utter_check_in_timings
+
+- rule: FAQ 2
+  steps:
+  - intent: check_out_timings
+  - action: utter_check_out_timings
+
+- rule: FAQ 3
+  steps:
+  - intent: cancel_reservation
+  - action: utter_cancel_reservation_1
+  - action: utter_cancel_reservation_2
+
+- rule: FAQ 4
+  steps:
+  - intent: cancellation_policy
+  - action: utter_cancellation_policy
+
+- rule: FAQ 5
+  steps:
+  - intent: restaurant
+  - action: utter_restaurant
+
+- rule: FAQ 6
+  steps:
+  - intent: breakfast_availability
+  - action: utter_breakfast_availability
+
+- rule: FAQ 7
+  steps:
+  - intent: breakfast_timings
+  - action: utter_breakfast_timings
+
+- rule: FAQ 8
+  steps:
+  - intent: restaurant_timings
+  - action: utter_restaurant_timings

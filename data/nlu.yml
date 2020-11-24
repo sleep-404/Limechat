@@ -1,0 +1,123 @@
+version: "2.0"
+
+nlu:
+- intent: book_room
+  examples: |
+    - book room
+    - I want to book a room for holidays
+    - I want to book a room
+    - May i book a room ?
+    - I would like to book a room
+    - Can I book a room ?
+    - room book
+    - book room for me
+
+- intent: book_room_number
+  examples: |
+    - [2](count_rooms) rooms
+    - [1](count_rooms) room would be nice
+    - [3](count_rooms) for 5 of us
+    - [4](count_rooms) would be great
+    - I want to book [9](count_rooms) rooms
+    - I would like to have [12](count_rooms) rooms
+    - Book [72](count_rooms) rooms please
+    - [21](count_rooms)
+- intent: check_in_timings
+  examples: |
+    - what are your check-in timings?
+    - check-in timings?
+    - your checkin timings
+    - when does your check-in start?
+    - What are the check-in timings of the hotel?
+    - May i know your check-in timings?
+    - Where can i find the check-in timings ?
+- intent: check_out_timings
+  examples: |
+    - what are your check-out timings?
+    - check-out timings?
+    - your checkout timings
+    - when does your check-out start?
+    - What are the check-out timings of the hotel?
+    - May i know your check-out timings?
+    - Where can i find the check-out timings ?
+- intent: cancel_reservation
+  examples: |
+    - How do I cancel a reservation?
+    - I want to cancel my reservation
+    - Can I cancel my reservation ?
+    - Help me cancelling my reservation?
+    - Where can I cancel my reservation?
+    - how can i cancel my reservation?
+    - Could you cancel reservation of mine?
+- intent: cancellation_policy
+  examples: |
+    - What is your cancellation policy?
+    - your cancellation policy?
+    - I want to know your cancellation policy?
+    - where can I find the cancellation policy?
+    - Point me the cancellation policy please.
+    - May i know your cancellation policy?
+- intent: restaurant
+  examples: |
+    - Does the hotel have a restaurant?
+    - Do you guys have a restaurant?
+    - Where is the restaurant?
+    - Is there a restaurant in this hotel?
+    - Let me know if there is a restaurant here
+    - I want to know about the restaurant of this hotel
+    - Can i go to the restaurant ?
+- intent: breakfast_availability
+  examples: |
+    - Does this hotel offer breakfast?
+    - Can I have breakfast at the hotel?
+    - is breakfast available at the hotel?
+    - Do this hotel provided breakfast?
+    - Will you guys provide breakfast at the hotel
+    - May i know if the hotel offers a breakfast
+- intent: breakfast_timings
+  examples: |
+    - What are the breakfast timings ?
+    - when does the breakfast start?
+    - when does the breakfast end?
+    - when does the breakfast table open?
+    - How long is the breakfast timings
+    - Breakfast timings on weekends ?
+    - Breakfast timings on weekdays ?
+- intent: restaurant_timings
+  examples: |
+    - What are the timings of your restaurant?
+    - When does the restaurant open?
+    - is the restaurant open all day?
+    - when does the restaurant closes?
+    - May i know at what time can i come to the restaurant?
+    - when does the restaurant operates ?
+
+- intent: room_clean_query
+  examples: |
+    - I want to have my room cleaned
+    - Clean my room
+    - My room is dirty, so please clean it
+    - I want my room clean to get cleaned.
+    - Can I have my room cleaned?
+    - Please send someone to clean my room
+    - Could you clean my room ?
+- intent: room_clean_fast
+  examples: |
+    - Could you send someone right now?
+    - Please send someone fast.
+    - I want it cleaned as fast as possible
+    - I do not have time, so please clean my room fast
+    - Make it quick !!
+    - I am running short of time
+    - I cannot wait for long
+    - anytime soon.
+    - Send someone in 5 minutes.
+- intent: room_clean_slow
+  examples: |
+    - Send someone after 2 hours
+    - I want it cleaned by evening.
+    - no hurry, anytime later is fine
+    - Right now busy, maybe after 4 hrs
+    - Later today
+    - I can wait.
+    - Busy all morning.
